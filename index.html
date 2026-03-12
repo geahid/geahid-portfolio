@@ -6,7 +6,7 @@
   <title>Geahid Sungka Agao — Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
@@ -14,10 +14,12 @@
   <!-- HEADER -->
   <header>
     <div class="header-inner">
-      <div class="header-text">
-        <p class="header-label">✦ Developer Portfolio</p>
-        <h1>Geahid Sungka Agao</h1>
-        <p class="course">BS-INFOTECH 2B &nbsp;·&nbsp; Cotabato State University</p>
+      <div class="logo-block">
+        <span class="logo-initials">GSA</span>
+        <div>
+          <p class="logo-name">Geahid Sungka Agao</p>
+          <p class="logo-sub">BS-INFOTECH 2B · Cotabato State University</p>
+        </div>
       </div>
       <nav>
         <a href="#home">Home</a>
@@ -30,29 +32,35 @@
 
   <!-- HOME SECTION -->
   <section id="home">
-    <div class="home-orb orb1"></div>
-    <div class="home-orb orb2"></div>
-    <div class="home-inner">
-      <div class="home-tag">👋 Welcome to my Portfolio</div>
-      <h2>Hi, I'm <span class="accent">Geahid.</span></h2>
-      <p id="datetime"></p>
-      <p class="home-sub">A passionate developer building real-world web &amp; system solutions.</p>
-      <button onclick="showWelcome()">Say Hello ✦</button>
+    <div class="home-grid">
+      <div class="home-left">
+        <p class="home-eyebrow">✺ Developer &amp; Problem Solver</p>
+        <h1>Building things<br/><em>that matter.</em></h1>
+        <p id="datetime" class="datetime"></p>
+        <p class="home-desc">Hi, I'm Geahid — a BS-INFOTECH student turning ideas into working software, one project at a time.</p>
+        <button onclick="showWelcome()">Say Hello</button>
+      </div>
+      <div class="home-right">
+        <div class="hero-card">
+          <div class="hero-stat"><span class="stat-num">8</span><span class="stat-label">Projects Built</span></div>
+          <div class="hero-divider"></div>
+          <div class="hero-stat"><span class="stat-num">2B</span><span class="stat-label">BS-INFOTECH</span></div>
+          <div class="hero-divider"></div>
+          <div class="hero-stat"><span class="stat-num">CSU</span><span class="stat-label">Cotabato State</span></div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- ABOUT SECTION -->
   <section id="about">
-    <h2 class="section-title">About Me</h2>
-    <div class="about-content">
-      <div class="profile-wrap">
-        <img src="agao.jpg" alt="Geahid Sungka Agao" class="profile-pic"/>
-        <div class="profile-badge">BS-INFOTECH 2B</div>
-      </div>
-      <div class="bio">
-        <p>Hi! I'm <strong>Geahid Sungka Agao</strong>, a second-year BS-INFOTECH student at <strong>Cotabato State University</strong>. I'm driven by a love for building software that actually solves real problems — from ordering systems to attendance trackers.</p>
+    <div class="section-label">/ About Me</div>
+    <div class="about-grid">
+      <div class="about-left">
+        <h2>Who I am.</h2>
+        <p>I'm <strong>Geahid Sungka Agao</strong>, a second-year BS-INFOTECH student at <strong>Cotabato State University</strong>. I'm driven by a love for building software that actually solves real problems — from ordering systems to attendance trackers.</p>
         <p>I enjoy the full cycle of development: designing the interface, writing clean logic, and shipping something that works. Every project I take on pushes me to learn more and build better.</p>
-        <div class="skills-row">
+        <div class="skills-wrap">
           <span>HTML</span>
           <span>CSS</span>
           <span>JavaScript</span>
@@ -60,60 +68,75 @@
           <span>UI/UX</span>
         </div>
       </div>
+      <div class="about-right">
+        <div class="photo-frame">
+          <img src="agao.jpg" alt="Geahid Sungka Agao" class="profile-pic"/>
+          <div class="photo-tag">BS-INFOTECH 2B</div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- PROJECTS SECTION -->
   <section id="projects">
-    <h2 class="section-title">My Projects</h2>
+    <div class="section-label">/ My Projects</div>
+    <h2 class="projects-heading">Things I've built.</h2>
     <div class="projects-grid">
 
       <div class="project-card">
-        <div class="project-icon">💬</div>
+        <div class="project-num">01</div>
         <h3>Online Messenger</h3>
         <p>A real-time web-based messaging application that allows users to communicate instantly through a clean and intuitive chat interface.</p>
+        <div class="project-tag">Web App</div>
       </div>
 
       <div class="project-card">
-        <div class="project-icon">🗂️</div>
+        <div class="project-num">02</div>
         <h3>Portfolio Website</h3>
         <p>A fully responsive personal portfolio built from scratch using HTML, CSS, and JavaScript — featuring live date display, contact form, and smooth navigation.</p>
+        <div class="project-tag">HTML / CSS / JS</div>
       </div>
 
       <div class="project-card">
-        <div class="project-icon">🛒</div>
+        <div class="project-num">03</div>
         <h3>MFC Online Ordering</h3>
         <p>An online ordering system for MFC that lets customers browse menus, place orders, and track their purchases seamlessly through a web interface.</p>
+        <div class="project-tag">Ordering System</div>
       </div>
 
       <div class="project-card">
-        <div class="project-icon">☕</div>
+        <div class="project-num">04</div>
         <h3>Don Mac Cafe POS</h3>
         <p>A Point-of-Sale system built for Don Mac Cafe — handles orders, billing, and transaction records to streamline daily cafe operations.</p>
+        <div class="project-tag">POS System</div>
       </div>
 
       <div class="project-card">
-        <div class="project-icon">📚</div>
+        <div class="project-num">05</div>
         <h3>Library Student Management</h3>
         <p>A management system for library student records — tracks borrowed books, due dates, student accounts, and generates reports for librarians.</p>
+        <div class="project-tag">Management System</div>
       </div>
 
       <div class="project-card">
-        <div class="project-icon">🍺</div>
-        <h3>Brewhaus Cafe Ordering System</h3>
+        <div class="project-num">06</div>
+        <h3>Brewhaus Cafe Ordering</h3>
         <p>A digital ordering platform for Brewhaus Cafe featuring menu management, order queuing, and receipt generation for efficient cafe service.</p>
+        <div class="project-tag">Ordering System</div>
       </div>
 
       <div class="project-card">
-        <div class="project-icon">💜</div>
+        <div class="project-num">07</div>
         <h3>Purple Messenger</h3>
         <p>A Google OAuth-based messaging app with a distinctive purple aesthetic — users log in with their Google account for secure, authenticated conversations.</p>
+        <div class="project-tag">Google OAuth</div>
       </div>
 
       <div class="project-card">
-        <div class="project-icon">📋</div>
+        <div class="project-num">08</div>
         <h3>Online Attendance System</h3>
         <p>A web-based attendance tracker for students and faculty — logs attendance in real time, generates reports, and reduces manual record-keeping.</p>
+        <div class="project-tag">Attendance System</div>
       </div>
 
     </div>
@@ -121,40 +144,51 @@
 
   <!-- CONTACT SECTION -->
   <section id="contact">
-    <h2 class="section-title">Contact Me</h2>
-    <p class="contact-sub">Have a question or want to collaborate? Send me a message!</p>
-
-    <div class="contact-wrapper">
-      <div class="contact-info">
-        <div class="contact-item">
-          <span class="contact-icon">📧</span>
-          <a href="/cdn-cgi/l/email-protection#e58280848d8c818482848addd1d3a58288848c89cb868a88"><span class="__cf_email__" data-cfemail="fa9d9f9b92939e9b9d9b95c2ceccba9d979b9396d4999597">[email&#160;protected]</span></a>
-        </div>
-        <div class="contact-item">
-          <span class="contact-icon">🎓</span>
-          <span>Cotabato State University</span>
-        </div>
-        <div class="contact-item">
-          <span class="contact-icon">📍</span>
-          <span>Cotabato, Philippines</span>
+    <div class="section-label">/ Contact</div>
+    <div class="contact-grid">
+      <div class="contact-left">
+        <h2>Let's talk.</h2>
+        <p>Have a project idea, question, or just want to connect? I'd love to hear from you.</p>
+        <div class="contact-details">
+          <div class="contact-row">
+            <span class="c-label">Email</span>
+            <a href="mailto:geahidagao846@gmail.com">geahidagao846@gmail.com</a>
+          </div>
+          <div class="contact-row">
+            <span class="c-label">School</span>
+            <span>Cotabato State University</span>
+          </div>
+          <div class="contact-row">
+            <span class="c-label">Location</span>
+            <span>Cotabato, Philippines</span>
+          </div>
         </div>
       </div>
+      <div class="contact-right">
+        <form id="contactForm">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Your full name" />
 
-      <form id="contactForm">
-        <label for="name">Name</label>
-        <input type="text" id="name" placeholder="Your full name" />
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="your@email.com" />
 
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="your@email.com" />
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" placeholder="Write your message here..."></textarea>
 
-        <label for="message">Message</label>
-        <textarea id="message" rows="5" placeholder="Write your message here..."></textarea>
-
-        <input type="submit" value="Send Message ✦" />
-      </form>
+          <input type="submit" value="Send Message →" />
+        </form>
+      </div>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <p>© 2026 <strong>Geahid Sungka Agao
+    <div class="footer-inner">
+      <span class="footer-initials">GSA</span>
+      <p>© 2026 Geahid Sungka Agao · BS-INFOTECH 2B · Cotabato State University</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
